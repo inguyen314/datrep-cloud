@@ -121,6 +121,15 @@ function initialize() {
     let disabledList = [basinName, gageName, beginDate, endDate, aveCheckbox, maxCheckbox, minCheckbox, computeHTMLBtn];
     disabledList.map((item) => { item.disabled = true });
 
+    if (type === "DATREP") {
+        pageTitle.textContent = "DatRep - Daily Gage Values";
+        checkboxDiv.style.display = 'none';
+        computeHTMLBtn.style.display = 'none';
+        computeCSV.style.display = 'none';
+
+        document.querySelector('head title').textContent = "DatRep - Daily Gage Values";
+    }
+
     // GET ALL DATA FOR THE SELECTED OFFICE
     officeNameDropdown.addEventListener('change', async function() {
 
@@ -134,13 +143,6 @@ function initialize() {
 
             let office = officeNameDropdown.value;
             //let type = "no idea";
-
-            if (type === "DATREP") {
-                pageTitle.textContent = "DatRep - Daily Gage Values";
-                checkboxDiv.style.display = 'none';
-                computeHTMLBtn.style.display = 'none';
-                computeCSV.style.display = 'none';
-            }
 
             // Get the current date and time, and compute a "look-back" time for historical data
             const currentDateTime = new Date();
