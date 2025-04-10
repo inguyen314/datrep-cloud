@@ -7,17 +7,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>StatMan - Statistic Computation Module</title> <!-- DISTRICT Home Page -->
         <meta name="Description" content="U.S. Army Corps of Engineers DISTRICT HERE Home Page" />
-        <link rel="stylesheet" href="css/body.css" />
-        <link rel="stylesheet" href="css/breadcrumbs.css" />
-        <link rel="stylesheet" href="css/jumpMenu.css" />
-        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet" href="./css/body.css" />
+        <link rel="stylesheet" href="./css/breadcrumbs.css" />
+        <link rel="stylesheet" href="./css/jumpMenu.css" />
+        <script type="text/javascript" src="./js/main.js"></script>
         <!-- Add sidebar.css IF NOT LOAD SIDEBAR TEMPLATE -->
-        <link rel="stylesheet" href="css/sidebar.css"/>
+        <link rel="stylesheet" href="./css/sidebar.css"/>
         <!-- Add content window style IF NOT LOAD SIDEBAR TEMPLATE -->
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/popup.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/loadingCircle.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/popup.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+        <link rel="stylesheet" href="./css/loadingCircle.css">
     </head>
     <body>
         <div id="page-container">
@@ -153,7 +153,7 @@
                                                     <span style="--i: 18;"></span>
                                                     <span style="--i: 19;"></span>
                                                     <span style="--i: 20;"></span>
-                                                    <h2 class="text-string">Loading Data...<br><b>If this takes more than 15 seconds, reload the page.</b></h2>
+                                                    <h2 class="text-string">Loading Data<br><b>If this takes more than 15 seconds, reload the page.</b></h2>
                                                 </div>
                                             </div>
 
@@ -397,7 +397,7 @@
                                             <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
                                             <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
-                                            <script type="module" src="js/script.js"></script>
+                                            <script type="module" src="./js/script.js"></script>
                                         </div>
 
                                         
@@ -441,14 +441,14 @@
         <footer id="footer">
             <!--Footer content populated here by script tag at end of body -->
         </footer>
-        <script src="js/libraries/jQuery-3.3.6.min.js"></script>
+        <script src="./js/libraries/jQuery-3.3.6.min.js"></script>
         <script defer>
             // When the document has loaded pull in the page header and footer skins
             $(document).ready(function () {
                 // Change the v= to a different number to force clearing the cached version on the client browser
-                $('#header').load('templates/DISTRICT.header.html?v=1');
-                // $('#sidebar').load('templates/DISTRICT.sidebar.html?v=1');
-                $('#footer').load('templates/DISTRICT.footer.html?v=1');
+                $('#header').load('../../templates/DISTRICT.header.html?v=1');
+                // $('#sidebar').load('../../templates/DISTRICT.sidebar.html?v=1');
+                $('#footer').load('../../templates/DISTRICT.footer.html?v=1');
             })
         </script>
     </body>

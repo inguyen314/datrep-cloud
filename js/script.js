@@ -1717,11 +1717,11 @@ function main(data) {
     computeHTMLBtn.textContent = "Compute HTML";
     loadingPageData();
 
-    let aveTableSring = 'Day,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec\n';
-    for (let i = 3; i < averageTable.childNodes.length; i++) {
-        aveTableSring += averageTable.childNodes[i].innerText.split('\t').join(',');
-        aveTableSring += '\n';
-    }
+    // let aveTableSring = 'Day,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec\n';
+    // for (let i = 3; i < averageTable.childNodes.length; i++) {
+    //     aveTableSring += averageTable.childNodes[i].innerText.split('\t').join(',');
+    //     aveTableSring += '\n';
+    // }
 
     computeCSV.addEventListener('click' , function() {
 
@@ -2854,7 +2854,3 @@ function consoleLog(type, ...message) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', async function () {
-
-    
-});
